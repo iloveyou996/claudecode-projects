@@ -1,5 +1,5 @@
 {
-  "name": "pomodoro-timer",
+  "name": "tomato",
   "version": "1.0.0",
   "description": "A desktop Pomodoro timer with task management",
   "main": "main.js",
@@ -29,6 +29,12 @@
       "renderer/**/*",
       "node_modules/**/*"
     ],
+    "extraResources": [
+      {
+        "from": "启动番茄钟.vbs",
+        "to": "../启动番茄钟.vbs"
+      }
+    ],
     "win": {
       "target": [
         {
@@ -37,7 +43,8 @@
             "x64"
           ]
         }
-      ]
+      ],
+      "signAndEditExecutable": false
     },
     "nsis": {
       "oneClick": false,
