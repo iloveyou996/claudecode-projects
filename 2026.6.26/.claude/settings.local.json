@@ -4,7 +4,12 @@
       "Bash(git config *)",
       "Bash(git commit *)",
       "Read(//d/ClaudeCode projects/2026.6.25/**)",
-      "Read(//d/ClaudeCode projects/2026.6.25_2/**)"
+      "Read(//d/ClaudeCode projects/2026.6.25_2/**)",
+      "Bash(curl *)",
+      "Bash(mkdir -p ~/.ssh)",
+      "Bash(ssh-keyscan -t ed25519 github.com)",
+      "Bash(./番茄钟.exe)",
+      "Bash(cmd.exe *)"
     ]
   }
 }

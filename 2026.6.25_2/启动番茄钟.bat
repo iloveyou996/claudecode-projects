@@ -1,13 +1,13 @@
 @echo off
 chcp 65001 >nul 2>&1
-title 🍅 番茄钟
+title 番茄钟
 cls
 
 echo.
 echo.
 echo           ████████████████████████████████
 echo           ██                          ██
-echo           ██    🍅  番  茄  钟  🍅     ██
+echo           ██     番  茄  钟            ██
 echo           ██     Pomodoro Timer       ██
 echo           ██                          ██
 echo           ████████████████████████████████
