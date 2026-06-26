@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄钟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>🍅 番茄钟</h1>
+    </header>
+
+    <!-- Timer Section -->
+    <section class="timer-section">
+      <div class="timer-ring-container">
+        <svg class="timer-ring" viewBox="0 0 200 200">
+          <circle class="ring-bg" cx="100" cy="100" r="90"></circle>
+          <circle class="ring-progress" id="ringProgress" cx="100" cy="100" r="90"></circle>
+        </svg>
+        <div class="timer-text">
+          <div class="timer-time" id="timerDisplay">25:00</div>
+          <div class="timer-status" id="timerStatus">准备开始</div>
+        </div>
+      </div>
+
+      <div class="timer-controls">
+        <button class="btn btn-start" id="btnStart" title="开始">
+          <span class="btn-icon">▶</span> 开始
+        </button>
+        <button class="btn btn-pause" id="btnPause" title="暂停" disabled>
+          <span class="btn-icon">⏸</span> 暂停
+        </button>
+        <button class="btn btn-reset" id="btnReset" title="重置">
+          <span class="btn-icon">↺</span> 重置
+        </button>
+      </div>
+    </section>
+
+    <!-- Daily Stats -->
+    <section class="stats-section">
+      <div class="stats-bar" id="statsBar">
+        <span>今日完成：<strong id="todayCount">0</strong> 🍅</span>
+      </div>
+    </section>
+
+    <!-- Task List Section -->
+    <section class="tasks-section">
+      <div class="tasks-header">
+        <h2>📋 任务列表</h2>
+      </div>
+      <div class="tasks-list" id="taskList">
+        <!-- Tasks rendered by app.js -->
+      </div>
+      <div class="task-add">
+        <input
+          type="text"
+          id="taskInput"
+          class="task-input"
+          placeholder="添加新任务..."
+          maxlength="120"
+        />
+        <button class="btn btn-add" id="btnAddTask">添加</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>工作 25 分钟 · 休息 5 分钟</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
